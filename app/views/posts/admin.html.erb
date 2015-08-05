@@ -1,0 +1,21 @@
+<h1> Administrator controls </h1>
+
+<%= link_to '<i class="glyphicon glyphicon-plus"></i> Post new message'.html_safe, new_post_path, {:class => "btn btn-success" } %> </br>
+<%= link_to '<i class="glyphicon glyphicon-plus"></i> Create new Event'.html_safe, new_post_path, {:class => "btn btn-success" } %>
+
+<h3> search for a message to edit or delete </h3>
+<%= form_tag('find', remote: true, :method => 'post') do %>
+<%= text_field_tag(:title, nil, {placeholder: 'Type exact post title here', :class => "search_field"}) %>
+<%= submit_tag(value = "search", :name => nil, :class => "btn btn-warning") %>
+
+<% end %>
+
+
+<div id="found_post"></div>
+
+<h3> search for an event to edit or delete </h3>
+<%= form_tag('find', remote: true, :method => 'post') do %>
+<%= text_field_tag(:title, nil, {placeholder: 'Type exact event title here', :class => "search_field"}) %>
+<%= submit_tag(value = "search", :name => nil, :class => "btn btn-warning") %>
+
+<% end %>

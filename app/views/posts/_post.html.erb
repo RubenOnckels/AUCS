@@ -1,0 +1,24 @@
+<div class="post">	
+
+	<span class="title">
+		<div class="dash"><span class="glyphicon glyphicon-minus"></span></div>
+		<h2> <%=@p.title %> </h2>
+		<div class="dash"><span class="glyphicon glyphicon-minus"></span></div>
+	</span>
+	
+	<h4><%=@p.date %></h4>
+	<div id="text"><%=@p.text.html_safe %></div>
+
+	</br>
+	
+	<% if session[:admin] %>
+<%= link_to 'edit', edit_post_path(@p) %>
+
+<%= link_to 'Delete', post_path(@p),
+				  method: :delete,
+				  data: { confirm: 'Are you sure?' } %>
+<% end %>
+	
+</div>
+
+

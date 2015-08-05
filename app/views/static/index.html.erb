@@ -1,0 +1,40 @@
+
+          <div class="jumbotron">
+            <h2>Aberdeen University Computing Science Society</h2>
+              <div class="media">
+			  <div class="row">
+                <div class="col-md-3" id="media-left">
+					<%= image_tag("jumbotron_unicorn_of_joy.jpg", {:class => "img-responsive img-thumbnail"}) %>
+                </div>
+                <div class="col-md-9" id="media-body">
+                  <p class="lead">We are <em>the</em> student-run computing science society &mdash; the place to be if you're interested in meeting other like-minded students and learning something new. Whether it's making the Raspberry Pi do our evil bidding, spreading the love for open source tools and software, or playing with LANs, we should have something to interest you. And sometimes we go to the pub, too.</p>
+                </div>
+              </div>
+			  </div>
+              <p><a class="btn btn-lg btn-primary" href="https://www.ausa.org.uk/societies/AUCS/" role="button">Find out more <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+          </div>
+          
+          <div class="row callto-feature">
+            <div class="col-md-4 callto-feature-box">
+		
+              <div class="callto-feature-icon"><span class="glyphicon glyphicon-user"></div>
+              <h2>Info and to join</h2>
+              <p>Anyone who is a member of the Students' Association is welcome to join us, and membership is free! Whether you're interested in the big picture, hardware, programming, robotics, or gentle appreciation of cats, there should be something to interest you, broaden your knowledge and sharpen your skills.</p>
+			   <%= link_to 'Learn More <i class="glyphicon glyphicon-chevron-right"></i>'.html_safe, "/about", class: 'btn btn-lg btn-default' %>
+            </div>
+            <hr />
+            <div class="col-md-4 callto-feature-box">
+              <div class="callto-feature-icon"><span class="glyphicon glyphicon-calendar" style="padding-left:10px;"></div>            
+              <h2>Events</h2>
+              <p>We meet every Wednesday during the academic term at 6pm in Meston 205. We could be enjoying a talk, trip out to an external event, discussion, code jam, social, gaming night, tutorial or workshop &mdash; it's up to you, so head over to our events page to see what's happening and join the fun!</p>
+              <%= link_to "See what's on <i class='glyphicon glyphicon-chevron-right'></i>".html_safe, "/events", class: 'btn btn-lg btn-default' %>
+           </div>
+           <hr />
+            <div class="col-md-4 callto-feature-box">
+              <div class="callto-feature-icon"><span class="glyphicon glyphicon-comment"></div>
+              <h2>Get in touch</h2>
+              <p>You can now talk to us on Twitter, Facetiousbook, good old email, and IRL in Meston most days. We are always keen to forge new links, take on suggestions and try and involve as many students of IT and Computing Science as possible. Don't be afraid to contact us if you have an idea and to get involved.</p>
+              <%= link_to "Contact Us <i class='glyphicon glyphicon-chevron-right'></i>".html_safe, "/events", class: 'btn btn-lg btn-default' %>
+            </div>
+          </div>
+      

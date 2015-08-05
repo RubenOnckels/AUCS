@@ -1,0 +1,10 @@
+
+
+$("#posts").html("<%= escape_javascript(render 'load', :offset => @offset, :tag => @tag) %>");
+$(".link-prev").html("<%= escape_javascript( link_to "<span class='glyphicon glyphicon-chevron-left'></span>".html_safe, posts_more_path(:offset => @offset, :direction => "back"),method: :post, remote: true) %>");
+$(".link-next").html("<%= escape_javascript( link_to "<span class='glyphicon glyphicon-chevron-right'></span>".html_safe, posts_more_path(:offset => @offset, :direction => "forward"),method: :post, remote: true) %>");
+
+
+
+
+

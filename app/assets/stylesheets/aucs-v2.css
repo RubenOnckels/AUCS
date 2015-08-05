@@ -1,0 +1,448 @@
+/* All the base are styled by us. Don't change this. */
+html {
+  position: relative; /* STICKY FOOTER STYLING. */
+  min-height: 100%; /* STICKY FOOTER STYLING. */
+}
+
+body {
+  font-family: Arial;
+  /*background: url('/aucs/aucs.org.uk/beta/seamless_paper_texture.png') #FFFFFF repeat;*/
+  /*background-color: #f8f6ee; */
+  background-color: #fffcf3; /* That's fab, Jim. */
+  /*background-color: #f5f4f1; /* A pretty new colour that doesn't look like bovril. */*/
+  color: #0A0A0A;
+  margin-bottom: 160px; /* Matches footer height + 30px. STICKY FOOTER STYLING. */
+}
+
+body > .container {
+  padding: 20px 15px 60px 15px; /* STICKY FOOTER STYLING. */
+}
+
+/* Style changes which apply to EVERYTHING. Used to set defaults. Don't mess with these. */
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+h1 > span.glyphicon {
+  color: #E62814;
+}
+
+/* Style changes which apply to EVERYTHING within the MAIN CONTAINERS. Also don't break these. */
+
+.main {
+  margin-top: 10px;
+}
+
+.main p {
+  font-size: 15px;
+}
+
+.main blockquote {
+  border-color: #2D8595;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Links and buttons. We love buttons. */
+
+a {
+  color: #2D8595;
+  text-decoration: none;
+  border-bottom: 1px #2D8595 dotted;
+}
+
+a:hover, a:focus {
+  color: #0F7A8E;
+  text-decoration: none;
+  border-bottom: 1px #0F7A8E dotted;
+}
+
+.btn {
+  border-radius: 0px;
+  padding: 15px 20px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #E62814;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #B51908;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+.btn-default {
+  background-color: #2D8595;
+  color: #FFFFFF;
+  border: 0px;  
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: #0F7A8E;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+.btn-info {
+  background-color: #FEFEFC;
+  color: #0A0A0A;
+  border: 0px;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: #f9f9ed;
+  color: #0A0A0A;
+  border: 0px;
+}
+
+.label {
+  border-radius: 0px;
+}
+
+/* Header
+-------------------------------------------------- */
+
+.header img {
+  padding-bottom: 10px;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+.navbar-header {
+  padding-left: 15px;
+  padding-bottom:10px;
+}
+
+.navbar-brand {
+  padding-top: 7px;
+  background-color: #E62814;
+}
+ 
+.navbar-brand img {
+  height: 60px;
+}
+ 
+.navbar-brand span {
+  font-size: 0.80em;
+  padding: 0px;
+}
+
+.navbar-brand .glyphicon-chevron-right {
+  color: white;
+} 
+
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar {
+  border-radius: 0px;
+  border-width: 0px;
+  margin-bottom: 20px; /** **/
+}
+
+.navbar a {
+  border-bottom: none;
+}
+
+.navbar a:hover, .navbar a:focus {
+  border-bottom: none;
+}
+
+.navbar-nav > li > a {
+    font-size: 1.25em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar {
+  min-height: 60px !important;
+}
+
+button.navbar-toggle {
+  font-size: 18px;
+}
+
+button.navbar-toggle > span.icon-bar {
+  height: 2px;
+}
+
+/* Force some pretty colours upon the navbar. */
+
+.navbar { background-color: #4D9BAA}
+.navbar .navbar-nav>.active>a:hover,.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { background-color: #0F7A8E}
+.navbar .navbar-nav>.active>a,.navbar .navbar-nav>.open>a,.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:hover,.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:hover, .navbar .navbar-nav>.open>a:focus { background-color: #2D8595}
+.dropdown-menu { background-color: #4D9BAA}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color:#0F7A8E}
+.navbar { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar { border-color: #4D9BAA}
+.navbar .navbar-brand { color: #FFFFFF}
+.navbar .navbar-brand:hover { background-color:#E62814; color: #FFFFFF}
+.navbar .navbar-nav>li>a { color: #FFFFFF}
+.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar .navbar-nav>.active>a,.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:hover, .navbar .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar .navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar .navbar-nav>.dropdown>a .caret { border-top-color: #FFFFFF}
+.navbar .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar .navbar-nav>.dropdown>a .caret { border-bottom-color: #FFFFFF}
+.navbar .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+/* Footer styles. */
+
+.footer {
+  position: absolute; /* STICKY FOOTER STYLING. */
+  bottom: 0; /* STICKY FOOTER STYLING. */
+  width: 100%; /* STICKY FOOTER STYLING. */
+  /* Set the fixed height of the footer here */
+  height: 130px; /* STICKY FOOTER STYLING. */
+  background-color: #F3EFE0;
+  border-top: 2px solid #E62814; /* STICKY FOOTER STYLING. */
+}
+
+.footer > .container {
+  padding-right: 15px; /* STICKY FOOTER STYLING. */
+  padding-left: 15px; /* STICKY FOOTER STYLING. */
+}
+
+.footer p {
+  color: #0A0A0A;
+}
+
+.footer .text-muted {
+  color: #555555;
+  padding-bottom: 0px;
+}
+
+.footer .container {
+  padding-top: 20px;
+}
+
+.footer a {
+  color: #E62814;
+  text-decoration: none;
+  border-bottom: 1px #E62814 dotted;
+}
+
+.footer a:hover, .footer a:focus {
+  color: #B51908;
+  text-decoration: none;
+  border-bottom: 1px #B51908 dotted;
+}
+
+/* ----------------------------------------------------------------------------
+EVERYTHING AFTER THIS POINT IS SPECIFIC TO PARTICULAR SECTIONS, PAGES, DEVICES OR ELEMENTS. THIS WAY WE CAN BE SURE THAT THEY ACTUALLY OVERRIDE DEFAULT BEHAVIOUR (WITH THE APPROPRIATE LEVEL OF SPECIFICITY IN SELECTORS, OF COURSE).
+/* ---------------------------------------------------------------------------- */
+
+/* Jumbotron, used on the homepage. Please don't spread the jumbotron evil to other pages. */
+
+.jumbotron {
+  padding: 20px;
+  background-color: #2D8595;
+  color: #ffffff;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+}
+
+.jumbotron p {
+  font-size: 1.2em;
+}
+
+.jumbotron h2 {
+  color: #ffffff;
+  font-size: 1.75em;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.jumbotron .glyphicon {
+  color: #ffffff;
+}
+
+.container .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron a.btn {
+  border: 2px solid #ffffff;
+}
+
+#media-left{
+padding-right:8px;
+}
+
+#media-body{
+padding-left: 0px;
+}
+
+/* Modules for sidebar. Currently "next event" and Twitter timeline. */
+
+.module {
+  padding: 8px 20px 8px 20px;
+  margin-top: 20px;
+}
+
+.module-twitter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.module-event {
+  color: #FFFFFF;
+  background-color: #E62814;
+  margin-top: 0px;
+}
+
+.module-event .module-event-nav-details {
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.module-event p {
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.module-event h1, .module-event h2, .module-event h3, .module-event h4, .module-event h5, .module-event h6 {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.module-event .module-event-nav-details a {
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: none;
+  /*border-bottom: 1px #FFFFFF dotted;*/
+  display: block;
+  /*height: 135px;*/
+  height: 100%;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  background-color: #e62814;
+  border: 2px solid #ffffff;
+}
+
+.module-event .module-event-nav-details a span.glyphicon-chevron-right {
+  font-size: 3.5em;
+  padding-bottom: 15px;
+}
+
+.module-event .module-event-nav-details a:hover, .module-event .module-event-nav-details a:focus {
+  color: #f5f5f5;
+  font-weight: 700;
+  /*order-bottom: 1px #F5F5F5 dotted;*/
+  background-color: #B51908;
+}
+
+/* Panels for displaying individual events, such as on the events. These are not the same as modules used elsewhere in a repeatable capacity. */
+
+.panel-event > .panel-heading {
+  color: #ffffff;
+  background-color: #2D8595;
+  border-radius: 0px;
+}
+
+.panel-event {
+    border: 1px solid #2D8595;
+    border-radius: 0px;
+}
+
+.panel-footer-event .glyphicon-calendar, .panel-footer-event p strong {
+  color: #E62814;
+}
+
+/* Callto feature specific styles. Basically a box containing actions we want
+people to take. Like social buttons.  */
+
+.callto-feature {
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+  border: 1px solid #eee8d2;
+  background-color: #f3efe0;
+}
+
+.callto-feature-box {
+ padding: 15px;
+}
+  
+.callto-feature hr {
+  color: #555555;
+  display: none;
+}
+
+.callto-feature .btn {
+  width: 100%;
+  border: 1px solid #f8f6ee;
+}
+
+.callto-feature-icon {
+  color: #2D8598;
+/*   display: block;
+ *//*   text-align: center; */
+  font-size: 10em;
+  height: 160px;
+}
+
+.callto-feature-icon a, .callto-feature-icon a:hover {
+    border-bottom: none;
+}
+
+.callto-feature-icon a:hover {
+  color: #E62814;
+}
+
+/* Specific type of feature boxes. */
+
+.callto-feature-box-social {
+  background-color: #2d8595;
+}
+
+.callto-feature-social {
+  background-color: #2d8595;
+}
+
+.callto-feature-social h2 {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.callto-feature-box-social .btn {
+  width: 100%;
+  border: 3px solid #ffffff;
+}
+
+/* Dirty, horrible, obscenely simple media queries to do our evil bidding. */
+
+@media (max-width: 768px) {
+  .callto-feature hr { display: inherit; }
+  .callto-feature { border: none; background: none; }
+  .callto-feature-social { background-color: #2d8595; }
+  /*.callto-feature-box { border: 1px solid #eee8d2; }*/
+  .main .btn { width: 100%; margin-top: 5px; }
+  .module-homepage .btn { padding: 10px; }
+  .module-column { margin-top: 30px; }
+  .jumbotron .media-left { display:none; }
+  .module-event .module-event-nav-details a { margin-top: 20px; margin-bottom: 15px; }
+}

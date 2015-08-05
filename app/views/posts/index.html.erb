@@ -1,0 +1,24 @@
+<div class="blog">
+
+<h1><span class="glyphicon glyphicon-arrow-right"></span> Recent Posts</h1>
+
+<div class="dir-btns">
+<div class="link-prev">  <%=  link_to "<i class='glyphicon glyphicon-chevron-left'></i>".html_safe, posts_more_path(:offset => @offset, :direction => "back"), method: :post, remote: true  %> </div>
+<div class="link-next">  <%=  link_to "<i class='glyphicon glyphicon-chevron-right'></i>".html_safe, posts_more_path(:offset => @offset, :direction => "forward"), method: :post, remote: true %> </div>
+</div>
+
+<%
+	@offset = 0 if @offset == nil
+	@title = "" if @title == nil
+%>
+
+<div id="posts" >
+<%= render 'load' %>
+</div>
+	
+</div>
+
+<div class="dir-btns">
+<div class="link-prev">  <%=  link_to "<i class='glyphicon glyphicon-chevron-left'></i>".html_safe, posts_more_path(:offset => @offset, :direction => "back"), method: :post, remote: true  %> </div>
+<div class="link-next">  <%=  link_to "<i class='glyphicon glyphicon-chevron-right'></i>".html_safe, posts_more_path(:offset => @offset, :direction => "forward"), method: :post, remote: true %> </div>
+</div>

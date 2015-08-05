@@ -1,0 +1,29 @@
+browser_spellcheck : true 
+
+
+
+
+
+
+
+toolbar:
+  - styleselect | bold italic | undo redo | fullscreen | preview | wordcount|
+  - image | link | emoticons | media | searchreplace | alignleft aligncenter alignright alignjustify | bullist numlist | outdent indent |
+  
+plugins:
+  - image
+  - link
+  - advlist
+  - autosave
+  - emoticons
+  - fullscreen
+  - lists
+  - media
+  - preview
+  - searchreplace
+  - wordcount
+  - insertdatetime
+  - table
+  - charmap
+
+ 

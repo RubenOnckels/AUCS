@@ -1,0 +1,102 @@
+/* the blog page */
+
+.blog h1 {
+ color: black;
+ padding: 15px;
+}
+
+/* css for one blog post */
+
+.post{
+background-color: #F3EFE0;
+margin: 25px;
+border: 1px solid #eee8d2;
+
+}
+
+.post h2, h4{
+padding-bottom:5px;
+text-align:center;
+}
+
+.post h4{
+color: #2D8595;
+font-weight: 700;
+}
+
+.title{
+display: block;
+text-align:center;
+padding-top: 7px;
+padding-bottom: 7px;
+background-color: #2D8595;
+}
+
+.title h2{
+display: inline;
+text-align:center;
+font-size: 30px;
+margin-left: 4px;
+color: white;
+}
+
+.dash {
+color: white;
+display: inline;
+}
+
+#text{
+margin-left: 35px;
+margin-right: 25px;
+}
+
+
+.dir-btns a{
+border: none;
+color: red;
+text-decoration: none;
+display: inline-block;
+
+}
+
+a:active {
+border: none;
+
+}
+
+.dir-btns{
+text-align:center;
+}
+
+.link-prev{
+display:inline-block;
+font-size: 1.70em;
+margin-right: 25px;
+}
+
+.link-next{
+display:inline-block;
+font-size: 1.75em;
+}
+
+/* admin page */
+
+.btn-success{
+margin-bottom: 20px;
+width: 250px;
+}
+
+.btn-warning  {
+padding: 8px 15px 8px 15px;
+
+}
+
+.search_field{
+width: 50%;
+}
+
+#found_post{
+ margin-top: 30px; 
+ width: 50%; 
+ text-align: center;
+}
