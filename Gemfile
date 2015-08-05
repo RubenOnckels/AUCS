@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'tinymce-rails'
 gem "twitter-bootstrap-rails"
-gem 'jquery-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
