@@ -1,4 +1,4 @@
-<% Post.all.order(date: :desc).limit(3).offset(@offset).each do |p| %>
+<% Post.all.order(id: :desc).limit(3).offset(@offset).each do |p| %>
 <% @p = p %>
 <%= render 'post' %>
 <%end%>

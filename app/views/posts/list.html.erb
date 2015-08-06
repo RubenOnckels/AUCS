@@ -1,0 +1,22 @@
+<div class="list-view">
+
+	<h2> list view </h2>
+
+	<div class="full-list" >
+
+		<% @post.each do |p| %>
+			<p> <strong> <%= p.title %> </strong>
+			@ <%= p.date %> 
+			<div id="links"><%= link_to 'edit', edit_post_path(p) %>
+			<%= link_to 'Delete', post_path(p), method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
+			</p>
+			</br>
+		<% end %>
+		
+	</div>
+			
+			
+</div>
+
+

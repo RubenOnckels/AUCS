@@ -1,0 +1,21 @@
+
+
+
+<% if @event == nil %>
+<h3> Wrong title, try again </h3>
+
+<%else %>
+
+<h2><%= @event.title %> </h2>
+<h4> <%= @event.date %> </h4>
+
+<%= link_to '<i class="glyphicon glyphicon-pencil"></i> edit'.html_safe, edit_event_path(@event), {:class => "btn btn-danger"} %>
+ <%= link_to '<i class="glyphicon glyphicon-remove"></i> Delete'.html_safe, event_path(@event),
+			 :class => "btn btn-danger", :id => "remove",
+              method: :delete,
+              data: { confirm: 'Are you sure?' }
+			  %>
+</br>
+</br>
+</br>
+<% end %>

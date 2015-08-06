@@ -9,13 +9,17 @@ class PostsController < ApplicationController
 		authenticate()
 		@post = Post.new(post_parameters)
 		if @post.save
-			redirect_to @post
+			redirect_to '/blog'
 		else
 			render 'new'
 		end
 	end
 
 	def index
+	end
+	
+	def list
+		authenticate()
 		@post = Post.all
 	end
 
@@ -33,7 +37,7 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 		 
 		if @post.update(post_parameters)
-			redirect_to @post
+			redirect_to '/blog'
 		else
 			render 'edit'
 		end
@@ -43,7 +47,7 @@ class PostsController < ApplicationController
 		authenticate()
 		@post = Post.find(params[:id])
 		@post.destroy
-		redirect_to root_path
+		redirect_to '/admin'
 	end
 	
 	def admin

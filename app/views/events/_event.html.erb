@@ -1,0 +1,30 @@
+<div class="post">	
+
+	<span class="title">
+		<div class="dash"><span class="glyphicon glyphicon-minus"></span></div>
+		<h2> <%=@p.title %> </h2>
+		<div class="dash"><span class="glyphicon glyphicon-minus"></span></div>
+	</span>
+	
+	<h4 class="header">  <%=@p.date.strftime("%a %d %B %Y") %></h4>
+	<h4  class="header" id="time"> @ <%=@p.time %> </h4>
+	<div id="text"><%=@p.text.html_safe %></div>
+	</br>
+	
+	
+	</br>
+	
+	<% if session[:admin] %>
+<%= link_to 'edit', edit_event_path(@p) %>
+
+<%= link_to 'Delete', event_path(@p),
+				  method: :delete,
+				  data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+
+<h4 class="location">  <%=@p.venue %></h4>
+	
+</div>
+
+

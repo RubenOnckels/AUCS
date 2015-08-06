@@ -1,0 +1,22 @@
+<div class="list-view">
+
+	<h2> list view </h2>
+
+	<div class="full-list" >
+
+		<% @event.each do |p| %>
+			<p> <strong> <%= p.title %> </strong>
+			@ <%= p.date %> 
+			<div id="links"><%= link_to 'edit', edit_event_path(p) %>
+			<%= link_to 'Delete', event_path(p), method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
+			</p>
+			</br>
+		<% end %>
+		
+	</div>
+			
+			
+</div>
+
+

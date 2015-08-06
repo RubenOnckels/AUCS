@@ -19,7 +19,7 @@ padding-bottom:5px;
 text-align:center;
 }
 
-.post h4{
+.header{
 color: #2D8595;
 font-weight: 700;
 }
@@ -48,6 +48,7 @@ display: inline;
 #text{
 margin-left: 35px;
 margin-right: 25px;
+margin-bottom: -20px;
 }
 
 
@@ -79,6 +80,18 @@ display:inline-block;
 font-size: 1.75em;
 }
 
+.location{
+padding: 5px;
+margin-bottom: -10px;
+background-color: #E62814;
+}
+
+.location{
+color: white;
+font-weight: 700;
+}
+
+
 /* admin page */
 
 .btn-success{
@@ -88,15 +101,45 @@ width: 250px;
 
 .btn-warning  {
 padding: 8px 15px 8px 15px;
+}
 
+#p-list-btn{
+background-color: #0094FF;
+}
+
+#p-list-btn:hover{
+background-color: #0072C4;
 }
 
 .search_field{
 width: 50%;
 }
 
-#found_post{
+#found_post, #found_event{
  margin-top: 30px; 
  width: 50%; 
  text-align: center;
 }
+
+#found_post h3, #found_event h3{
+color: red;
+}
+
+#time{
+margin-top: -8px;
+}
+
+/* list page */
+
+.list-view{width: 65%;}
+
+.list-view p{display: inline;}
+
+.list-view h2{margin: 0px 0px 25px 0px;}
+
+#links{
+display: inline;
+float: right;
+}
+
+

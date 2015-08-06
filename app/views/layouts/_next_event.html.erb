@@ -1,16 +1,41 @@
 <div class="module module-event">
-  
+<% @p = nil %>
+ <% today = Date.today %>
+  <% Event.where('date >= :date',date: today).limit(1).each do |p| %>
+  <% @p = p %>
     <div class="row">
       <div class="col-md-9">
         <h3><span class="glyphicon glyphicon-arrow-right"></span> What's next?</h3>
-        <p>Trip out to TechMeetup</p>
+        <p> <%=p.title %></p>
         <span class="event-details">
-          <p><span class="glyphicon glyphicon-calendar"></span> <strong>6PM, WED, 20 MAY 2015</strong></p>
-          <p><span class="glyphicon glyphicon-globe"></span> Room 205, Meston Building, University of Aberdeen</p>
+          <p><span class="glyphicon glyphicon-calendar"></span> <strong><%= p.time%> <%=@p.date.strftime("%a %d %B %Y")%></strong></p>
+          <p><span class="glyphicon glyphicon-globe"></span> <%= p.venue %></p>
         </span>
       </div>
       <div class="col-md-3 module-event-nav-details">
 		 <%= link_to "<span class='glyphicon glyphicon-chevron-right'></span> More info".html_safe, "/events" %>
       </div>
     </div>
+	<% end %>
+	
+	
+	
+	<% if @p == nil %>
+	
+	    <div class="row">
+      <div class="col-md-9">
+        <h3><span class="glyphicon glyphicon-arrow-right"></span> What's next?</h3>
+        <p> A Weekly Meeting </p>
+        <span class="event-details">
+          <p><span class="glyphicon glyphicon-calendar"></span> <strong>6PM next Wednesday</strong></p>
+          <p><span class="glyphicon glyphicon-globe"></span> Room 205, Meston Building, Aberdeen Univeristy</p>
+        </span>
+      </div>
+      <div class="col-md-3 module-event-nav-details">
+		 <%= link_to "<span class='glyphicon glyphicon-chevron-right'></span> More info".html_safe, "/events" %>
+      </div>
+    </div>
+	
+	<% end %>
+
 </div>
